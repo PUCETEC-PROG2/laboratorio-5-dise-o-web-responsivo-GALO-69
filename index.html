@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
     <link rel="stylesheet" href="assets/css/menu.css">
     <link rel="stylesheet" href="assets/css/pokemon-cards.css">
+    <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+                
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">Pokedex</div>
+            <div class="nav-logo"><img src="./assets/img/580b57fcd9996e24bc43c31f.png" alt="Logo Pokemon"></div>
             <ul class="nav-menu">
                 <li class="nav-item"><a href="index.html" class="nav-link">Pokemons</a></li>
                 <li class="nav-item"><a href="trainers.html" class="nav-link">Entrenadores</a></li>
@@ -19,6 +22,12 @@
             </ul>
         </div>
     </nav>
+
+    <div class="burger-menu" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 
     <main class="container">
         <section id="pokemons" class="pokemon-grid">
@@ -94,6 +103,17 @@
                 </div>
             </div>
         </section>
+    
     </main>
+    <footer class="footer">
+        <p>&copy; 2024 Pokedex. Todos los derechos reservados.</p>
+    </footer>
+
+
+    <script>
+        function toggleMenu() {
+            document.body.classList.toggle('menu-active');
+        }
+    </script>
 </body>
 </html>
